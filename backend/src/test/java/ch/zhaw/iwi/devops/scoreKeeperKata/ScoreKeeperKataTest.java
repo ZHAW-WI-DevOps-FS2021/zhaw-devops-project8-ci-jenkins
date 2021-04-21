@@ -10,7 +10,7 @@ public class ScoreKeeperKataTest {
 
     @Before
     public void setup(){
-
+        
         sck = new ScoreKeeperKata();
     }
 
@@ -38,26 +38,26 @@ public class ScoreKeeperKataTest {
         Assert.assertEquals("000:001", sck.getScore());
     }
 
-    @Ignore
+    @Test
     public void testScoreTeamB2(){
         sck.scoreTeamB2();
         Assert.assertEquals("000:002", sck.getScore());
     }
         
-    @Ignore
+    @Test
     public void testScoreTeamB3(){
         sck.scoreTeamB3();
         Assert.assertEquals("000:003", sck.getScore());
     }
 
-    @Ignore
+    @Test
     public void testScoreTeamB3Twice(){
         sck.scoreTeamB3();
         sck.scoreTeamB3();
         Assert.assertEquals("000:006", sck.getScore());
     }
 
-    @Ignore
+    @Test
     public void testScoreMutlipleTeamsMultipleTimes(){
         sck.scoreTeamA();
         sck.scoreTeamA2();
@@ -66,7 +66,7 @@ public class ScoreKeeperKataTest {
         Assert.assertEquals("003:006", sck.getScore());
     }
 
-    @Ignore
+    @Test
     public void testScoreTeamAMax(){
         for(int i = 0; i< 999; i++){
             sck.scoreTeamA();
@@ -74,7 +74,7 @@ public class ScoreKeeperKataTest {
         Assert.assertEquals("999:000", sck.getScore());
     }
 
-    @Ignore
+    @Test
     public void testScoreTeamBOverFlow(){
         for(int i = 0; i< 1000; i++){
             sck.scoreTeamA();
