@@ -10,6 +10,7 @@ public class ScoreKeeperKataTest {
 
     @Before
     public void setup(){
+        
         sck = new ScoreKeeperKata();
     }
 
