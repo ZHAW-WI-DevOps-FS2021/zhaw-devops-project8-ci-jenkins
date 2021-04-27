@@ -32,19 +32,19 @@ public class ScoreKeeperKataTest {
         Assert.assertEquals("003:000", sck.getScore());
     }
 
-    @Ignore
+    @Test
     public void testScoreTeamB1(){       
         sck.scoreTeamB1();
         Assert.assertEquals("000:001", sck.getScore());
     }
 
-    @Ignore
+    @Test
     public void testScoreTeamB2(){
         sck.scoreTeamB2();
         Assert.assertEquals("000:002", sck.getScore());
     }
         
-    @Ignore
+    @Test
     public void testScoreTeamB3(){
         sck.scoreTeamB3();
         Assert.assertEquals("000:003", sck.getScore());
